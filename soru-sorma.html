@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru Sorma Sayfası - OK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>OK - Soru Sorma Sayfası</h1>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div>
+                <form id="questionForm">
+                    <label for="questionInput">Sorunuzu Buraya Yazın:</label>
+                    <textarea id="questionInput" rows="4" cols="50" placeholder="Sorunuzu buraya yazın..."></textarea><br>
+                    <button type="button" onclick="submitQuestion()">Soruyu Gönder</button>
+                </form>
+            </div>
+            <div id="questionList">
+                <h2>Sorulan Sorular</h2>
+                <ul id="questions"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 OK</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
